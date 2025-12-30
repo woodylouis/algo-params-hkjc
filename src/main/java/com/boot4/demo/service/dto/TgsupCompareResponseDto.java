@@ -1,17 +1,36 @@
 package com.boot4.demo.service.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 public class TgsupCompareResponseDto {
-    private List<TgsupCompareResultDto> data;
-    private String retErrText;
+    @JsonProperty("algoCData")
+    private List<TgsupCompareResultDto_AlgoC> algoCData;
+    
+    @JsonProperty("nonAlgoCData")
+    private List<TgsupCompareResultDto_NonAlgoC> nonAlgoCData;
 
-    public TgsupCompareResponseDto(List<TgsupCompareResultDto> data, String retErrText) {
-        this.data = data;
-        this.retErrText = retErrText != null ? retErrText : "";
+    public TgsupCompareResponseDto() {
     }
 
-    // Getters
-    public List<TgsupCompareResultDto> getData() { return data; }
-    public String getRetErrText() { return retErrText; }
+    public TgsupCompareResponseDto(List<TgsupCompareResultDto_AlgoC> algoCData, List<TgsupCompareResultDto_NonAlgoC> nonAlgoCData) {
+        this.algoCData = algoCData;
+        this.nonAlgoCData = nonAlgoCData;
+    }
+
+    public List<TgsupCompareResultDto_AlgoC> getAlgoCData() {
+        return algoCData;
+    }
+
+    public void setAlgoCData(List<TgsupCompareResultDto_AlgoC> algoCData) {
+        this.algoCData = algoCData;
+    }
+
+    public List<TgsupCompareResultDto_NonAlgoC> getNonAlgoCData() {
+        return nonAlgoCData;
+    }
+
+    public void setNonAlgoCData(List<TgsupCompareResultDto_NonAlgoC> nonAlgoCData) {
+        this.nonAlgoCData = nonAlgoCData;
+    }
 }
