@@ -1,0 +1,6 @@
+2025-12-10T15:41:14.489581 | Thread 1 failed: Required input parameter '@TargetBusinessDate' is missing
+org.springframework.dao.InvalidDataAccessApiUsageException: Required input parameter '@TargetBusinessDate' is missing
+2025-12-10T15:44:04.639723900 | Thread 1 failed: Required input parameter '@TargetBusinessDate' is missing
+org.springframework.dao.InvalidDataAccessApiUsageException: Required input parameter '@TargetBusinessDate' is missing
+2025-12-10T15:46:39.112262700 | Thread 1 failed: Required input parameter '@TargetBusinessDate' is missing
+org.springframework.dao.InvalidDataAccessApiUsageException: Required input parameter '@TargetBusinessDate' is missing

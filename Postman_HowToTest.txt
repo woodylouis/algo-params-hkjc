@@ -1,0 +1,13 @@
+
+
+Method: POST
+URL: http://devqfmtrd002:8080/api/tgsup-compare
+Headers: Content-Type: application/json
+Body → raw → JSON:
+
+JSON{
+  "eventId": 50058668,
+  "startDateTime": "2025-12-17T21:22:11.950",
+  "endDateTime": "2025-12-19T05:51:23.953",
+  "isInPlay": false
+}
